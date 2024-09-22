@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary-text-clr: #471909;;
+    --primary-bg-clr: wheat;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: var(--primary-bg-clr);
+}
+
+
+.wrapper-container {
+    max-width: 85vw;
+    margin: auto;
+}
+
+.navbar-wrapper {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.logo-image {
+    width: 6rem;
+}
+
+.brand-name {
+    font-weight: 800;
+    color: var(--primary-text-clr);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.list-links {
+    list-style: none;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-text-clr);
+    
+}
+
+.links:hover {
+    color: rgb(187, 82, 44);
+    transition: all .2s ease-in;
+}
+
+/* hero section */
+
+.hero_container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.hero_main-header {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #471909;
+    padding-bottom: 1rem;
+}
+
+.hero_header-description {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #531807;
+    padding-bottom: 1rem;
+}
+
+.hero_explore-btn {
+    outline: none;
+    padding: .6rem .6rem;
+    border: none;
+    background: #471909;
+    border-radius: 2rem;
+}
+
+.exploreBtn {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: inherit;
+    color: wheat;
+}
+
+.hero_explore-btn:hover {
+    background: #67230d;
+    transition: all .2s ease-in;
+}
+
+.hero_menu-btn {
+    background: none;
+    outline: none;
+    padding: .5rem .6rem;
+    border: none;
+    border: .1rem solid #471909;
+    border-radius: 2rem;
+    margin-left: 2rem;
+}
+
+.menuBtn {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: inherit;
+    color: #67230d;
+}
+
+.inventions_header-text {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #471909;
+}
+
+.new_flavours_container-wrapper {
+    margin-top: 5rem;
+}
+
+.new_flavour-container {
+    width: 65%;
+}
+
+.new_flavour-description {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #67230d;
+    padding-top: .5rem;
+}
+
+.product-image {
+    width: 100%;
+    height: 10rem;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    border: .01rem solid #5317071b;
+    border-radius: .5rem;
+    padding: .9rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(58, 39, 32, 0.2), 
+                0 8px 40px rgba(58, 39, 32, 0.1); 
+}
+
+
+.new_flavour_products-wrapper {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3a2720;
+    padding: .7rem 0;
+}
+
+.product-description {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #67230d;
+    padding-bottom: .7rem;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #531807;
+    padding-bottom: .7rem;
+}
+
+.product-btn {
+    padding: .5rem .8rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #531807;
+    background: none;
+    border: 1px solid #531807;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .2s ease;
+} 
+
+.product-btn:hover {
+    background: #531807;
+    color: bisque;
+}
